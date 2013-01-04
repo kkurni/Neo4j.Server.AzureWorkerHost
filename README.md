@@ -25,6 +25,20 @@ Up-to-the-minute packages can be installed from [NuGet](https://nuget.org/packag
 6. Deploy to real Azure
 7. Bam! Neo4j is running in real Azure
 
+## Requirement
+1. download Neo4J package.
+a. unzip
+b. edit bin/base.bat
+c. find and replace windows-service-wrapper-*.jar to windows-service-wrapper-4.jar
+d. rename your neo4j-*version into neo4-install
+e. zip it
+f. upload (neo4j-install.zip) it into your blob storage
+
+2. download JRE runtime 1.7 jre7.zip) and upload it to your blob storage. 
+
+// Here is the example all the files that need to be upload it into your blob storage
+https://github.com/kkurni/Exploracy.CloudService/tree/master/Blobs
+
 ## What Works Today
 
 1. Create an Azure solution
